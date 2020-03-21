@@ -1,0 +1,28 @@
+body
+{
+    display: flex;
+}
+.banner
+{
+    width: 15%;
+    height: 800px;
+    background-color: #bee8dc;
+}
+img
+{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h3
+{
+    background-color: #424242;
+    color: #D9FFFF;
+    text-align: center;
+    font-size: large;
+}

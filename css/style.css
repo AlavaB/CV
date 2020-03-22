@@ -1,14 +1,16 @@
-body
+.blocpage
 {
+    width: 1200px;
+    margin: auto;
     display: flex;
 }
 /************bande colorée***************/
-.banner
+nav
 {
-    width: 15%;
-    height: 800px;
+    flex: 1;
     background-color: #bee8dc;
 }
+
 img
 {
     width: 200px;
@@ -19,12 +21,11 @@ img
     margin-top: 40px;
     margin-bottom: 40px;
 }
-h3
+.titlebanner
 {
+    text-align: center;
     background-color: #424242;
     color: #D9FFFF;
-    text-align: center;
-    font-size: 1.3em;
 }
 .marge
 {
@@ -32,36 +33,89 @@ h3
     padding-left: 10px;
 }
 
+
 /*************Partie principale*****************/
-.title
+main
+{
+    flex: 3;
+}
+header
 {
     margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 h1
 {
     font-size: 5em;
 }
-.color
+.color /*couleur sur prénom*/
 {
     color: #bee8dc;
 }
-.position
+.position 
 {
     font-size: 1.3em;
 }
-.underline
+.underline /*soulignement poste*/
 {
     text-decoration: underline;
     text-decoration-color: #bee8dc;
 }
+h3
+{
+    font-size: 1em;
+}
+h2
+{
+    font-size: 1.3em;
+}
+.title
+{
+    border-bottom: #bee8dc solid;
+    margin-bottom: 50px;
+}
 section
 {
     margin-left: 50px;
+    margin-top: 30px;
     font-size: 1.3em;
+}
+.cursus
+{
+    display: flex;
+}
+.padding1
+{
+    flex: 0.5;
+}
+.padding2
+{
+    flex: 3;
+}
+.padding3
+{
+    flex: 6;
+    text-align: justify;
 }
 .icon
 {
     color: #bee8dc;
+}
+.recommandation
+{
+    display: flex;
+}
+.contact
+{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@media all and (max-device-width: 480px)
+{
+    .banner
+        {
+            display: none;
+        }
 }

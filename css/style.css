@@ -13,7 +13,7 @@
 }
 
 /************bande colorée***************/
-nav
+aside
 {
     flex: 1;
     background-color: #bee8dc;
@@ -24,10 +24,11 @@ img
     width: 200px;
     height: 200px;
     display: block;
+    border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 .titlebanner
 {
@@ -36,16 +37,18 @@ img
     color: #D9FFFF;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 6px;
 }
 .margin
 {
     font-size: 1em;
-    margin-left: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .me
 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: justify;
     margin-bottom: 300px;
 }
@@ -53,13 +56,16 @@ img
 {
     display: flex;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .roundborder 
-    {
+{
     border: solid 0.08em #424242;
-    border-radius: .1em;
+    border-radius: 1em;
     padding: .2em .25em .15em; 
-    }
+}
+
 /*************Partie principale*****************/
 main
 {
@@ -68,13 +74,14 @@ main
 }
 header
 {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 70px;
 }
 h1
 {
     font-size: 4em;
+    margin-bottom: 10px;
 }
 .color /*couleur sur prénom*/
 {
@@ -82,16 +89,18 @@ h1
 }
 .position 
 {
-    font-size: 1.3em;
+    font-size: 1.8em;
+    margin-top: -5px;
 }
 .underline /*soulignement poste*/
 {
-    text-decoration: underline;
-    text-decoration-color: #bee8dc;
+    width: 90px;
+    border-top: 3px solid #bee8dc;
+    margin-top: -20px;
 }
 h2
 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 h3
 {
@@ -108,17 +117,23 @@ section
     margin-top: 30px;
     font-size: 1.3em;
 }
+.mainpart
+{
+    margin-right: 50px;
+    margin-top: 80px;
+}
 .curriculum
 {
     display: flex;
 }
+
 .padding1
 {
     flex: 0.5;
 }
 .padding2
 {
-    flex: 3;
+    flex: 2;
 }
 .padding3
 {
@@ -131,47 +146,95 @@ section
 }
 .recommandation
 {
-    display: flex;
-}
-.contact
-{
-    margin-left: 80px;
-    margin-right: 80px;
+    display: flex;    
+    justify-content: space-around;
 }
 
 /**************Responsive************/
 @media screen and (max-width: 768px)
 {
-    .blocpage
+    .blocpage 
     {
+        display: block;
+    }
+    aside
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    article
+    {
+        width: 200px;
+    }
+    .margin
+    {
+        margin-left: -2px;
+    }
+    .element3
+    {
+        order: 4;
         width: auto;
     }
-    nav 
+    .me
     {
-        display: none;
+        margin-bottom: 50px;
     }
-    main 
+    .flex
     {
-        
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: 30px;
+        margin-left: 30px;
     }
-    h1 
+    .iconmargin
     {
-        font-size: 2em;
+        margin-bottom: 25px;
     }
-    .title
-    {
-        display: none;
-    }
+
     .padding1
     {
-        display: none;
+        flex: 1;
     }
     .padding2
     {
-        display: none;
+        flex: 3;
+    }
+    .padding3
+    {
+        flex: 10;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 460px)
+{
+
+    h1
+    {
+        font-size: 2.3em;
+    }
+    .recommandation
+    {
+        flex-direction: column;
     }
     .curriculum
     {
-        display: initial;
+        display: block;
+    }
+    header
+    {
+        margin-left: 5px;
+    }
+    section
+    {
+        margin-left: 5px;
+    }
+    .title
+    {
+        font-size: 1em;
+    }
+    aside
+    {
+        display: block;
     }
 }

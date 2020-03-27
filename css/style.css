@@ -91,12 +91,13 @@ h1
 {
     font-size: 1.8em;
     margin-top: -5px;
+    margin-bottom: 20px;
 }
 .underline /*soulignement poste*/
 {
     width: 90px;
     border-top: 3px solid #bee8dc;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 h2
 {
@@ -116,9 +117,6 @@ section
     margin-left: 50px;
     margin-top: 30px;
     font-size: 1.3em;
-}
-.mainpart
-{
     margin-right: 50px;
     margin-top: 80px;
 }
@@ -126,7 +124,6 @@ section
 {
     display: flex;
 }
-
 .padding1
 {
     flex: 0.5;
@@ -223,25 +220,61 @@ section
     .recommandation
     {
         flex-direction: column;
+        text-align: center;
     }
     .curriculum
     {
         display: block;
+        width: auto;
+
+    }
+    .padding1
+    {
+        text-align: center;
+        width: auto;
+    }
+    .padding2
+    {
+        text-align: center;
+        width: auto;
+    }
+    .padding3
+    {
+        text-align: center;
+        width: auto;
     }
     header
     {
-        margin-left: 5px;
+        margin-left: 10px;
     }
     section
     {
         margin-left: 5px;
+        margin-right: 5px;
+        width: auto;
     }
     .title
     {
-        font-size: 1em;
+        font-size: 0.9em;
+        width: auto;
+        margin-bottom: 5px;
     }
     aside
     {
         display: block;
+    }
+    .element2
+    {
+        width: auto;
+        text-align: center;
+    }
+    .element4
+    {
+        width: auto;
+        text-align: center;
+    }
+    .margin
+    {
+        margin: auto;
     }
 }

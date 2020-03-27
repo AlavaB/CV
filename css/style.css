@@ -155,7 +155,7 @@ section
 {
     .blocpage 
     {
-        display: block;
+        flex-direction: column-reverse;
     }
     aside
     {
@@ -163,9 +163,17 @@ section
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    header
+    {
+        margin-top: 10px;
+    }
     article
     {
         width: 200px;
+    }
+    .contact
+    {
+        margin-bottom: 50px;
     }
     .margin
     {
@@ -191,7 +199,6 @@ section
     {
         margin-bottom: 25px;
     }
-
     .padding1
     {
         flex: 1;
@@ -206,7 +213,7 @@ section
         text-align: justify;
     }
 }
-@media screen and (max-width: 460px)
+@media screen and (max-width: 480px)
 {
 
     h1

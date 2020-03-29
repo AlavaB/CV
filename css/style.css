@@ -1,8 +1,8 @@
 @font-face 
 {
     font-family: 'ralewayregular';
-    src: url('font/raleway-regular-webfont.woff2') format('woff2'),
-         url('font/raleway-regular-webfont.woff') format('woff');
+    src: url('../font/raleway-regular-webfont.woff2') format('woff2'),
+         url('../font/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,8 +27,8 @@ img
     border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .titlebanner
 {
@@ -50,7 +50,7 @@ img
     margin-left: 50px;
     margin-right: 50px;
     text-align: justify;
-    margin-bottom: 300px;
+    margin-bottom: 450px;
 }
 .flex
 {
@@ -216,6 +216,14 @@ section
     h1
     {
         font-size: 2.3em;
+    }
+    .position
+    {
+        font-size: 1.6em;
+    }
+    .underline
+    {
+        width: 75px;
     }
     .recommandation
     {
